@@ -816,6 +816,13 @@ form.form p.required label, form.form span.required label { background: none; pa
             }
         });
     });
+
+// Select all links or elements that should not navigate
+document.querySelectorAll('a').forEach(function(link) {
+  link.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link action
+    console.log('Link click intercepted, no navigation!');
+  });
 });
 </script></div>
             </div>

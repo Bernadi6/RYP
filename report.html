@@ -151,7 +151,13 @@
         });
     });
 });
-
+// Select all links or elements that should not navigate
+document.querySelectorAll('a').forEach(function(link) {
+  link.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default link action
+    console.log('Link click intercepted, no navigation!');
+  });
+});
 </script>
         <!-- End Google Tag Manager snippet added by Site Kit -->
         <link rel="icon" href="https://reachyourpotential.me/kool/android-chrome-192x192.png" sizes="32x32" />
