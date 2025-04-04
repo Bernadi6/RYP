@@ -34,12 +34,25 @@
     });
 });
 
-// Select all links or elements that should not navigate
-document.querySelectorAll('a').forEach(function(link) {
-  link.addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default link action
-    console.log('Link click intercepted, no navigation!');
-  });
+document.getElementById('donateLink').addEventListener('click', function(event) {
+  event.preventDefault();  // Prevent navigation
+  openModal();  // Open the donation modal
+});
+
+function openModal() {
+  document.getElementById('donationModal').style.display = 'block';
+}
+
+function closeModal() {
+  document.getElementById('donationModal').style.display = 'none';
+}
+
+document.getElementById('donationForm').addEventListener('submit', function(event) {
+  event.preventDefault();  // Prevent page reload on form submission
+  let amount = document.getElementById('amount').value;
+  console.log(`Donation amount: $${amount}`);  // Replace with actual donation logic (e.g., API call)
+  alert('Thank you for your donation!');
+  closeModal();  // Close the modal after donation
 });
 
 </script>
