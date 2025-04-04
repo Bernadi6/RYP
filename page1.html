@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html><head><base href="https://go.pardot.com"><meta charset="utf-8"><meta name="description" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Reach Your Potential</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<link rel="shortcut icon" type="image/jpg" href="https://reachyourpotential.me/kool/android-chrome-512x512.png">
+
+
+<!-- Favicon (small icon on the left of the title in the page tab) -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><style type="text/css">
+
+/* we'll see */
+form.form input.text, form.form textarea.standard, form.form select, form.form input.date { 
+	display:block;
+	width:100%;
+	padding:.375rem .75rem;
+	line-height:1.5;
+	color:#495057;
+	background-color:#fff;
+	background-clip:padding-box;
+	transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+        /* --------------------------------------------------------------
+            FORM STYLES
+        ----------------------------------------------------------------- */
+
+        /* Hides blue highlight around fields and make them change color when focused */
+
+        input.text {
+            user-select: none;
+            padding-left: 5px;
+        }
+
+        input.text:focus {
+            outline: none !important;
+            border: 1px solid #e17f00 !important;
+            transition: all .2s linear 0s !important;
+        }
+        
+        textarea:focus {
+            outline: none !important;
+            border: 1px solid #e17f00 !important;
+            transition: all .2s linear 0s !important;
+        }
+        
+            select:focus {
+            outline: none !important;
+            border: 1px solid #e17f00 !important;
+            transition: all .2s linear 0s !important;
+        }
+
+        /* Set default input style. */
+        #pardot-form input {
+        	border: 1px solid #e17f00;;
+        	border-radius: 10px;
+        	box-sizing: border-box;
+        	color: #2c3e50;
+        	font-size: 14px;
+        	padding: 7px 15px;
+        	width: 100%;
+        	height: 3em;
+        }
+    
+        /*  */
+        body form.form div.fluidigmform{
+        	float: left !important;
+        	clear: left !important;
+        	width: 100% !important;
+        	margin-right: 0 !important;
+        	margin-left: 0 !important;
+        	padding-bottom:10px !important;
+        	display: inline-block !important;
+        }
+
+        /* Field Labels */
+        label {
+        	color: black !important;
+        	font-family: 'Arial, Helvetica, sans-serif'
+            font-size: 12px !important;
+        	font-weight: normal !important;
+        	display: block !important;
+        	padding-bottom: 2px !important;
+        	padding-top: 2px !important;
+        }
+
+        /*Change the color of the asterisk and error text*/
+        .error {
+            color:#e17f00 !important;
+        }
+
+        /*  */
+        body form.form p.required label {
+        	font-weight: normal !important;
+        }
+        
+        /*  */
+        body form.form input.text,body form.form select {
+        	width: 100% !important;
+        	height: 25px !important;
+        	min-height: 13px !important;
+        }
+
+        /*  */
+        form.form select [size="5"]{
+        	width: 100% !important;
+        	height: 100px
+        	!important;
+        	min-height: 13px !important;
+        }
+        
+        /* CTA Button on Landing Pages*/
+        #pardot-form p.submit input {
+            color: #fff;
+            background-color: #e17f00;
+            border-color: #e17f00; 
+            border-radius: 30px;
+            width: 100%;
+            font-size: 1.25em !important;
+        }
+
+        #pardot-form p.submit input:hover {
+            color: #fff;
+            background-color: #86004F;
+            border-color: #86004F;
+            transition: all .2s linear 0s !important;
+        }
+
+        /* CTA Button when the Form is by itself*/
+        .btn-danger {
+            color: #e17f00;
+            border-color: #e17f00; 
+            border-radius: 30px;
+            width: 100%;
+            font-size: 1.25em !important;
+        }
+        .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open>.dropdown-toggle.btn-danger {
+            color: #fff;
+            background-color: #86004F;
+            border-color: #86004F;
+            transition: all .2s linear 0s !important;
+        }
+        
+        /* Checkbox Field */
+        .pd-checkbox input {
+        	opacity: 0;
+        	position: absolute;
+        }
+        .pd-checkbox input, .pd-checkbox label {
+        	display: inline-block;
+        	vertical-align: middle;
+        	margin-left: 0px;
+        	margin-right: 5px;
+        	cursor: pointer;
+        }
+        .pd-checkbox label {
+        	position: relative;
+        }
+        .pd-checkbox input + label:before {
+        	content: '';
+        	background: #fff;
+        	border: 1px solid #e17f00;;
+        	display: inline-block;
+        	vertical-align: middle;
+        	width: 12px;
+        	height:12px;
+        	padding-top: 2px;
+        	padding-bottom: 2px;
+        	padding-right: 2px;
+        	padding-left: 2px;
+        	margin-right: 7px;
+        	margin-left: 7px;
+        	text-align: left;
+        	font-size:16px;
+        	line-height:3px;
+        }
+        .pd-checkbox input:checked + label:before { /*content: "\2713"; color: #530080;*/
+        	font-family: Arial, Helvetica, sans-serif;
+        	text-align: left;
+        	background: #e17f00;
+        	border-color: #e17f00;;
+        }
+        
+        /* Radio Button Field */
+        .pd-radio input {
+        	opacity: 0;
+        	position: absolute;
+        }
+        .pd-radio input, .pd-checkbox label {
+        	display: inline-block;
+        	vertical-align: middle;
+        	margin-left: 0px;
+        	margin-right: 5px;
+        	cursor: pointer;
+        }
+        .pd-radio label {
+        	position: relative;
+        	margin: 0px 10px 0px 0px !important;
+        }
+        .pd-radio input + label:before {
+        	content: '';
+        	background: #fff;
+        	border: 1px solid #e17f00;;
+        	display: inline-block;
+        	vertical-align: middle;
+        	width: 12px;
+        	height:12px;
+        	padding-top: 2px;
+    	    padding-bottom: 2px;
+        	padding-right: 2px;
+        	padding-left: 2px;
+        	margin-right: 7px;
+        	margin-left: 7px;
+        	text-align: left;
+        	font-size:16px;
+        	line-height:3px;
+        }
+        .pd-radio input:checked + label:before { /* default: background: #530080; color: #530080; border-color: #ddd; */
+        	background: #e17f00;;
+        	color: #e17f00;;
+        	border-color: #e17f00;
+        }
+        .pd-radio input + label:before {
+        	border-radius: 50%;
+        }
+        .pd-radio input:focus + label {
+        	outline: 1px solid #ddd;
+        }
+        
+        /* Textarea Field */
+        #pardot-form textarea {
+            height: 10em;
+            border: 1px solid #e17f00;
+        	border-radius: 10px;
+        }
+    
+        /* Dropdown Field */
+        #pardot-form select {
+            height: 3em !important;
+            border-color: #e17f00 !important;
+            border-width: 1px !important;
+            border-radius: 10px !important;
+        }
+    
+        /* Multi-selct Field */
+        #pardot-form select {
+            height: 3em !important;
+            border-color: #e17f00 !important;
+            border-width: 1px !important;
+            border-radius: 10px !important;
+        }
+        
+        /* --------------------------------------------------------------
+            BASE
+        ----------------------------------------------------------------- */
+
+        /* Set the base font */
+            body {
+                color: #444;
+                font-family: Helvetica, sans-serif;
+                line-height: 27px;
+                font-size: 15px;
+            }
+
+        /* Set heading fonts */
+            h1 {
+                color: #00549e;
+            }
+            h2 {
+                color: #008A5E;
+            }
+            h3 { 
+                font-size:15px;
+                color: #FFF;
+                font-weight:bold;
+            }
+            h4 {  }
+            
+            h1.page-banner {
+                font-size: clamp(26px,6vw,36px);
+                color: white;
+                font-weight: bold;
+                padding-top:.5em;
+                padding-bottom:.2em;
+                text-align:center;
+            }
+            
+            h2.page-banner {
+                font-size: clamp(20px,6vw,30px);
+                color: white;
+                font-weight: normal;
+                padding-top:0px;
+                padding-bottom:.5em;
+                text-align:center;
+            }            
+
+        /* --------------------------------------------------------------
+            BANNER IMAGE - This is where you control the banner image you wish to use. 
+            
+            Remember that the image you set here will be appear on all Pardot Landing Pages that use this template,
+            so you may wish to create a new copy of this template first, to avoid unintended changes to existing landing pages.
+            
+            Insert the link to your image between the parenthesis below: url(your-image.png)
+        ----------------------------------------------------------------- */
+            
+        /* Banner Image */
+            .page-banner-image {
+                background-image: url(https://reachyourpotential.me/Building-Family.jpg); /*place your image URL between the parenthesis*/
+                height: 450px; /* The height of the image. Change as needed. */
+                background-color: #ffffff; /* Used if the image is unavailable */
+                background-size: cover; /* Resize the background image to cover the entire container */
+                background-repeat: no-repeat; /* Do not repeat the image */
+                background-attachment: scroll; /* Image Scrolls with Window*/
+                background-position: 50% 35%; /* Where the image sits in the background. 0% 0% would place it in the top left corner.*/
+            }
+            
+        /* Pink Block */
+            .pink-block {
+                background-color: #e17f00;
+            }            
+
+        /* Set default background colour */
+            .bgcolour {
+                background-color: #ffffff;
+                color: #ffffff;
+            }
+            
+            .logopadding {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            
+        /* Footer CSS Styling */
+            .footer {
+                background-color: #fafafa;
+                font-family: helvetica, sans-serif;
+                font-size: 12px;
+                line-height: 24px;
+                color: #060606;
+            }
+            .social-icons {
+                line-height: 15px;
+            }
+            footer a {
+                color: #FFF;
+                text-decoration: none;
+            }
+            footer a:hover {
+                color: #FFF;
+                text-decoration: none;
+            }
+            div.ctaButton a {        
+                color: white !important;        
+                font-size: 12px !important;         
+                font-weight: normal !important;        
+                text-decoration: none !important; 
+                font-weight: bold !important;
+                font-family: helvetica, sans-serif !important; 
+                border: 2px solid #fff;
+                border-radius: 3px;
+                padding: 9px 25px 10px 25px;
+            }          
+            div.ctaButton a:hover {        
+                color: #0c4976 !important;
+                transition: all .2s linear 0s !important;
+                background-color: white; !important; 
+                border: 2px solid #fff;
+                border-radius: 3px;
+                padding: 9px 25px 10px 25px;
+            }   
+
+        /* --------------------------------------------------------------
+            TEMPLATE DETAILS
+        ----------------------------------------------------------------- */
+
+        /* Set dynamic width to images in block two */
+            .block-two .thumbnail img {
+                max-width: 100%;
+            }
+            
+        /* Controls footer div columns */
+            .column {
+                float: left;
+                width: 25%;
+            }
+
+        /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            footer a {
+    color: #e17f00;; /* Change this color to your desired link color */
+    text-decoration: none; /* Removes underline */
+  }
+  
+  footer a:hover {
+    color: #2c3e50; /* Color when the user hovers over the link */
+    text-decoration: underline; /* Adds underline when hovered */
+  }
+
+        /* Enable strong control over editable table cell widths */
+            table.editable-table {
+                table-layout: fixed;
+                width: 100%;
+            }
+            table.editable-table td {
+                padding:0px 15px;
+            }
+
+        /* Set default editable table cell spacing & widths */
+            table.editable-table.3col td {
+                padding:0px 15px;
+                width:33%;
+            }
+            table.editable-table.2col td {
+                padding:0px 15px;
+                width:50%;
+            }
+
+        /* --------------------------------------------------------------
+            SPACING
+        ----------------------------------------------------------------- */
+
+        /* make element edge to edge */
+            .flush {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+        /* vertical padding */
+            .vpadding {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .vpadding-double{
+                padding-top:40px;
+                padding-bottom:40px;
+            }
+
+        /* top padding only */
+            .tpadding {
+                padding-top: 20px;
+                padding-bottom: 0px;
+            }
+
+        /* bottom padding only */
+            .bpadding {
+                padding-top:0px;
+                padding-bottom:20px;
+            }
+
+        /* large vertical padding */
+            .vpaddingLG {
+                padding-top:50px;
+                padding-bottom:50px;
+            }
+
+        /* space below headings */
+            h1, h2, h3, h4, h5, h6 {
+                margin-bottom:15px;
+            }
+
+        /* space below paragraph */
+            p {
+                margin-bottom:20px;
+            }
+            
+        /* Making re-captcha form visible */
+        .pd-captcha {
+            display: block !important;
+        }
+/* Targeting the button with the class btn-danger */
+.btn-danger {
+        background-color: #e17f00;  /* Light red */
+        border-color: #e17f00;      /* Darker red for the border */
+        color: white;               /* Text color */
+    }
+    
+    .btn-danger:hover {
+        background-color: #e17f00;   /* Darker red when hovering */
+        border-color: #e17f00;      /* Darker border color when hovering */
+    }
+    
+    .btn-danger:focus {
+        box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);  /* Add a glowing effect when the button is focused */
+    }
+        /* --------------------------------------------------------------
+            RESPONSIVE
+        ----------------------------------------------------------------- */
+        /* xs */
+            @media(max-width:767px){
+                .pull-right{
+                    float: none !important;
+                    text-align: center;
+                }
+                .social{
+                    text-align: center;
+                }
+                .cta{
+                    padding-top: 20px;
+                    display: inline !important;
+                }
+                .cta p{
+                    margin-bottom: 0;
+                    display: inline !important;
+                }
+                .logo{
+                    text-align:center;
+                }
+                .jumbotron{
+                    margin-bottom: 0;
+                }
+                .flush{
+                    padding-left:15px;
+                    padding-right:15px;
+                }
+                 .vpadding-double{
+                    padding-top:0px;
+                    padding-bottom:0px;
+                }
+                .responsive {
+                    width: 100%;
+                    height: auto;
+                    max-width: 250px;
+                }
+                .responsive2 {
+                    width: 100%;
+                    max-width: 400px;
+                    height: auto;
+                }
+            }
+            
+        /* sm */
+            @media (max-width:768px){
+                #pardot-form.label-left .field-label {
+                    width: 100%;
+                    text-align: left;
+                }
+                #pardot-form.label-left input.text, #pardot-form.label-left input.date, #pardot-form.label-left textarea, #pardot-form.label-left select {
+                    width: 100%;
+                }
+                #pardot-form.label-left span.value,
+                #pardot-form.label-left .description,
+                #pardot-form.label-left .no-label > *,
+                #pardot-form.label-left .submit,
+                #pardot-form.label-left .error.no-label {
+                    width: 100%;
+                }
+                #pardot-form.label-left span.value, #pardot-form.label-left .description, #pardot-form.label-left .no-label > *, #pardot-form.label-left .submit, #pardot-form.label-left .error.no-label {
+                    margin-left: 0;
+                }
+                form.form p {
+                    margin-left: 0px !important;
+                    padding-left: 0px !important;
+                }
+                table.editable-table td {
+                    display: block;
+                    width: 100% !important;
+                }
+                .column {
+                    width: 100%;
+                    text-align: center;
+                }
+                .footerctabutton {
+                    text-align:center;
+                }
+                div {
+                    padding-bottom: 7px;
+                }
+}
+            }
+        /* md */
+            @media(min-width:992px){
+            }
+        /* lg */
+            @media(min-width:1200px){
+            }
+            * {
+    font-family: 'Roboto', sans-serif;
+}
+
+</style>
+<!-- Logo -->
+ <link rel="icon" href="https://bracus.o/">
+ <script type="text/javascript" src="https://go.bracusa.org/js/piUtils.js?ver=2021-09-20"></script>
+ <script type="text/javascript">
+piAId = '919273';
+piCId = '6201';
+piHostname = 'pi.pardot.com';
+
+(function() {
+	function async_load(){
+		var s = document.createElement('script'); s.type = 'text/javascript';
+		s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+		var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+	}
+	if(window.attachEvent) { window.attachEvent('onload', async_load); }
+	else { window.addEventListener('load', async_load, false); }
+})();
+</script>
+</head>
+
+    </style>
+
+<!-- Body Start -->
+
+
+ <body>
+<div class="logo logopadding" align="left" style="border-bottom:1px solid #e17f00;">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+            <a href="/Users/bernadikola/Downloads/reachyrP/page2.html">  <img src="https://reachyourpotential.me/kool/ryp.png" class="responsive" width="135" alt="Reach Your Potential Logo" placehold="logo" pardot-region="Logo" pardot-region-type="image"></a>
+      </div>
+    </div>
+  </div>
+</div>
+               
+<!--Banner Header -->
+                
+<div class="page-banner-image" data-inline-style="style-5f22f05da65ad">
+  <!--<div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 pardot-region="Page banner Header" pardot-region-type="simple"  class="page-banner">Title</h1>
+      </div>
+    </div>
+  </div>-->
+</div>  
+    
+    <!-- Body Content -->
+    
+<div class="pink-block" data-inline-style="style-5f22f05da65ad">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 pardot-region="Page banner title" pardot-region-type="basic" class="page-banner" data-id="6864" data-hml-enabled="1">Be part of a community of changemakers.</h1>
+      </div>
+    </div>
+  </div>
+</div> 
+
+    <div class="container">
+        <div class="row vpaddingLG">
+            <div class="col-md-6" style="padding-right: 75px;">
+            <!--<div class="editable">
+                    <h1 pardot-region="Page Title">Header 1</h1>
+                </div>
+                <div class="editable">
+                    <h2  pardot-region="Tagline" pardot-region-type="pardot">Header 2</h2>
+                </div>-->
+                <div class="bpadding" pardot-region="Main Content" data-id="6868" data-hml-enabled="1"><h2><span style="font-size:28px;"><span style="color:#000000;">Sign up to receive news about BRAC directly in your inbox! </span></span></h2>
+
+<h2><span style="color:#000000;">At Reach Your Potential USA, we have seen the tremendous power of community and hope in action, and thanks to our supporters, we can provide more life-changing assistance to people living in poverty, enabling them to build resilient livelihoods.</span></h2></div>
+            </div>
+            
+            
+            <!--- Form Content -->
+            
+            <div class="col-md-12">
+                <div style="padding: 20px 20px; border: 0px solid white; border-radius: 10px;">
+                    <form accept-charset="UTF-8" method="post" action="https://" class="form" id="pardot-form">
+
+<style type="text/css">
+form.form p.required label, form.form span.required label { background: none; padding-left: 0px; }
+</style><div class="form-row">
+
+<div class="form-group form-field col-6 first_name pd-text required required-custom    ">
+
+<label class="field-label" for="First_Namepi_First_Name">First Name *</label>
+
+<input type="text" name="First_Namepi_First_Name" id="First_Namepi_First_Name" value="" class="text" size="30" maxlength="40" onchange="" onfocus=""><div id="error_for_First_Namepi_First_Name" style="display:none"></div>
+
+</div>
+
+<div class="form-group form-field col-6 last_name pd-text required required-custom    ">
+
+<label class="field-label" for="Last_Namepi_Last_Name">Last Name *</label>
+
+<input type="text" name="Last_Namepi_Last_Name" id="Last_Namepi_Last_Name" value="" class="text" size="30" maxlength="80" onchange="" onfocus=""><div id="error_for_Last_Namepi_Last_Name" style="display:none"></div>
+
+</div>
+
+<div class="form-group form-field col-12 email pd-text required required-custom    ">
+
+<label class="field-label" for="Emailpi_Email">Email *</label>
+
+<input type="text" name="Emailpi_Email" id="Emailpi_Email" value="" class="text" size="30" maxlength="255" onchange="" onfocus=""><div id="error_for_Emailpi_Email" style="display:none"></div>
+
+</div>
+
+<div class="form-group form-field col-12 country pd-select required required-custom    ">
+
+<label class="field-label" for="918273_12121pi_918273_12121">Country *</label>
+
+<select name="918273_12121pi_918273_12121" id="918273_12121pi_918273_12121" class="select" onchange=""><option value="" selected></option><option value="40411">United States</option><option value="40413">Canada</option>
+    <option value="40415">Afghanistan</option><option value="40417">Albania</option><option value="40419">Algeria</option><option value="40421">American Samoa</option><option value="40423">Andorra</option>
+    <option value="40425">Angola</option><option value="40427">Anguilla</option><option value="40429">Antarctica</option><option value="40431">Antigua and Barbuda</option><option value="40433">Argentina</option>
+    <option value="40435">Armenia</option><option value="40437">Aruba</option><option value="40439">Australia</option><option value="40441">Austria</option><option value="40443">Azerbaijan</option><option value="40445">Bahamas</option>
+    <option value="40447">Bahrain</option><option value="40449">Bangladesh</option><option value="40451">Barbados</option><option value="40453">Belarus</option><option value="40455">Belgium</option><option value="40457">Belize</option>
+    <option value="40459">Benin</option><option value="40461">Bermuda</option><option value="40463">Bhutan</option><option value="40465">Bolivia</option><option value="40467">Bosnia and Herzegovina</option><option value="40469">Botswana</option>
+    <option value="40471">Brazil</option><option value="40473">British Indian Ocean Territory</option><option value="40475">British Virgin Islands</option><option value="40477">Brunei</option><option value="40479">Bulgaria</option>
+    <option value="40481">Burkina Faso</option><option value="40483">Burundi</option><option value="40485">Cambodia</option><option value="40487">Cameroon</option><option value="40489">Cape Verde</option><option value="40491">Cayman Islands</option>
+    <option value="40493">Central African Republic</option><option value="40495">Chad</option><option value="40497">Chile</option><option value="40499">China</option><option value="40501">Christmas Island</option><option value="40503">Cocos (Keeling) Islands</option>
+    <option value="40505">Colombia</option><option value="40507">Comoros</option><option value="40509">Congo</option><option value="40511">Cook Islands</option><option value="40513">Costa Rica</option><option value="40515">Croatia</option><option value="40517">Cuba</option>
+    <option value="40519">Curaçao</option><option value="40521">Cyprus</option><option value="40523">Czech Republic</option><option value="40525">Côte d’Ivoire</option><option value="40527">Democratic Republic of the Congo</option><option value="40529">Denmark</option>
+    <option value="40531">Djibouti</option><option value="40533">Dominica</option><option value="40535">Dominican Republic</option><option value="40537">Ecuador</option><option value="40539">Egypt</option><option value="40541">El Salvador</option>
+    <option value="40543">Equatorial Guinea</option><option value="40545">Eritrea</option><option value="40547">Estonia</option><option value="40549">Ethiopia</option><option value="40551">Falkland Islands</option><option value="40553">Faroe Islands</option>
+    <option value="40555">Fiji</option><option value="40557">Finland</option><option value="40559">France</option><option value="40561">French Guiana</option><option value="40563">French Polynesia</option><option value="40565">French Southern Territories</option>
+    <option value="40567">Gabon</option><option value="40569">Gambia</option><option value="40571">Georgia</option><option value="40573">Germany</option><option value="40575">Ghana</option><option value="40577">Gibraltar</option><option value="40579">Greece</option>
+    <option value="40581">Greenland</option><option value="40583">Grenada</option><option value="40585">Guadeloupe</option><option value="40587">Guam</option><option value="40589">Guatemala</option><option value="40591">Guernsey</option><option value="40593">Guinea</option>
+    <option value="40595">Guinea-Bissau</option><option value="40597">Guyana</option><option value="40599">Haiti</option><option value="40601">Honduras</option><option value="40603">Hong Kong S.A.R., China</option><option value="40605">Hungary</option><option value="40607">Iceland</option>
+    <option value="40609">India</option><option value="40611">Indonesia</option><option value="40613">Iran</option><option value="40615">Iraq</option><option value="40617">Ireland</option><option value="40619">Isle of Man</option><option value="40621">Israel</option>
+    <option value="40623">Italy</option><option value="40625">Jamaica</option><option value="40627">Japan</option><option value="40629">Jersey</option><option value="40631">Jordan</option><option value="40633">Kazakhstan</option><option value="40635">Kenya</option><option value="40637">Kiribati</option>
+    <option value="40639">Kuwait</option><option value="40641">Kyrgyzstan</option><option value="40643">Laos</option><option value="40645">Latvia</option><option value="40647">Lebanon</option><option value="40649">Lesotho</option><option value="40651">Liberia</option><option value="40653">Libya</option>
+    <option value="40655">Liechtenstein</option><option value="40657">Lithuania</option><option value="40659">Luxembourg</option><option value="40661">Macao S.A.R., China</option><option value="40663">Macedonia</option><option value="40665">Madagascar</option><option value="40667">Malawi</option>
+    <option value="40669">Malaysia</option><option value="40671">Maldives</option><option value="40673">Mali</option><option value="40675">Malta</option><option value="40677">Marshall Islands</option><option value="40679">Martinique</option><option value="40681">Mauritania</option><option value="40683">Mauritius</option>
+    <option value="40685">Mayotte</option><option value="40687">Mexico</option><option value="40689">Micronesia</option><option value="40691">Moldova</option><option value="40693">Monaco</option><option value="40695">Mongolia</option><option value="40697">Montenegro</option>
+    <option value="40699">Montserrat</option><option value="40701">Morocco</option><option value="40703">Mozambique</option><option value="40705">Myanmar</option><option value="40707">Namibia</option><option value="40709">Nauru</option><option value="40711">Nepal</option>
+    <option value="40713">Netherlands</option><option value="40715">New Caledonia</option><option value="40717">New Zealand</option><option value="40719">Nicaragua</option><option value="40721">Niger</option><option value="40723">Nigeria</option><option value="40725">Niue</option>
+    <option value="40727">Norfolk Island</option><option value="40729">North Korea</option><option value="40731">Northern Mariana Islands</option><option value="40733">Norway</option><option value="40735">Oman</option><option value="40737">Pakistan</option><option value="40739">Palau</option>
+    <option value="40741">Palestinian Territory</option><option value="40743">Panama</option><option value="40745">Papua New Guinea</option><option value="40747">Paraguay</option><option value="40749">Peru</option><option value="40751">Philippines</option><option value="40753">Pitcairn</option>
+    <option value="40755">Poland</option><option value="40757">Portugal</option><option value="40759">Puerto Rico</option><option value="40761">Qatar</option><option value="40763">Romania</option><option value="40765">Russia</option><option value="40767">Rwanda</option>
+    <option value="40769">Réunion</option><option value="40771">Saint Barthélemy</option><option value="40773">Saint Helena</option><option value="40775">Saint Kitts and Nevis</option><option value="40777">Saint Lucia</option><option value="40779">Saint Pierre and Miquelon</option>
+    <option value="40781">Saint Vincent and the Grenadines</option><option value="40783">Samoa</option><option value="40785">San Marino</option><option value="40787">Sao Tome and Principe</option><option value="40789">Saudi Arabia</option><option value="40791">Senegal</option>
+    <option value="40793">Serbia</option><option value="40795">Seychelles</option><option value="40797">Sierra Leone</option><option value="40799">Singapore</option><option value="40801">Slovakia</option><option value="40803">Slovenia</option><option value="40805">Solomon Islands</option>
+    <option value="40807">Somalia</option><option value="40809">South Africa</option><option value="40811">South Korea</option><option value="40813">South Sudan</option><option value="40815">Spain</option><option value="40817">Sri Lanka</option><option value="40819">Sudan</option>
+    <option value="40821">Suriname</option><option value="40823">Svalbard and Jan Mayen</option><option value="40825">Swaziland</option><option value="40827">Sweden</option><option value="40829">Switzerland</option><option value="40831">Syria</option><option value="40833">Taiwan</option>
+    <option value="40835">Tajikistan</option><option value="40837">Tanzania</option><option value="40839">Thailand</option><option value="40841">Timor-Leste</option><option value="40843">Togo</option><option value="40845">Tokelau</option><option value="40847">Tonga</option>
+    <option value="40849">Trinidad and Tobago</option><option value="40851">Tunisia</option><option value="40853">Turkey</option><option value="40855">Turkmenistan</option><option value="40857">Turks and Caicos Islands</option><option value="40859">Tuvalu</option>
+    <option value="40861">U.S. Virgin Islands</option><option value="40863">Uganda</option><option value="40865">Ukraine</option><option value="40867">United Arab Emirates</option><option value="40869">United Kingdom</option>
+    <option value="40871">United States Minor Outlying Islands</option><option value="40873">Uruguay</option><option value="40875">Uzbekistan</option><option value="40877">Vanuatu</option><option value="40879">Vatican</option><option value="40881">Venezuela</option>
+    <option value="40883">Viet Nam</option><option value="40885">Wallis and Futuna</option><option value="40887">Western Sahara</option><option value="40889">Yemen</option><option value="40891">Zambia</option><option value="40893">Zimbabwe</option></select><div id="error_for_918273_12121pi_918273_12121" style="display:none"></div>
+
+</div>
+
+<div class="form-group form-field %%form-field-css-classes%% pd-captcha required hidden   %%form-field-dependency-css%%">
+
+<div class="g-recaptcha" data-sitekey=""></div>
+<script type="text/javascript" src="">
+</script><div id="error_for_Recaptchapi_Recaptcha" style="display:none"></div>
+
+</div>
+
+</div>
+
+	<p style="position:absolute; width:190px; left:-9999px; top: -9999px;visibility:hidden;">
+		<label for="pi_extra_field">Comments</label>
+		<input type="text" name="pi_extra_field" id="pi_extra_field"></p>
+		
+
+<!-- forces IE5-8 to correctly submit UTF8 content -->
+<input name="_utf8" type="hidden" value="☃"><div class="col-auto">
+<button type="submit" class="btn btn-danger btn-lg btn-block" accesskey="s">Submit</button>
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+	var anchors = document.getElementsByTagName("a");
+	for (var i=0; i<anchors.length; i++) {
+		var anchor = anchors[i];
+		if(anchor.getAttribute("href")&&!anchor.getAttribute("target")) {
+			anchor.target = "_top";
+		}
+	}
+		
+//]]>
+</script><!--this script changes the color of the required asterisk--><script>
+	var all = document.getElementsByClassName('field-label');
+	for (var i = 0; i < all.length; i++) {
+		var $oldReq = all[i].innerHTML;
+		console.log($oldReq);
+		var $newReq = '<span style="color:#e10086!important;">*';
+		$oldReq = $oldReq.replace("*", $newReq);
+		all[i].innerHTML = $oldReq
+	}
+</script><input type="hidden" name="hiddenDependentFields" id="hiddenDependentFields" value=""></form><script type="text/javascript">(function(){ pardot.$(document).ready(function(){ (function() {
+	var $ = window.pardot.$;
+	window.pardot.FormDependencyMap = [];
+
+	$('.form-field-primary input, .form-field-primary select').each(function(index, input) {
+		$(input).on('change', window.piAjax.checkForDependentField);
+		window.piAjax.checkForDependentField.call(input);
+	});
+})(); });})();
+
+
+    // Get the hamburger icon and mobile navigation
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    // Toggle the mobile menu when the hamburger icon is clicked
+    hamburger.addEventListener('click', function() {
+        mobileNav.classList.toggle('active');
+    });
+
+    // Add event listeners for the menu items that have submenus on mobile
+    const mobileMenuLinks = document.querySelectorAll('.menu-item > a');
+
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const submenu = this.nextElementSibling;
+
+            if (submenu && submenu.classList.contains('sub-menu')) {
+                e.preventDefault(); // Prevent the default link behavior
+                submenu.classList.toggle('active'); // Toggle the active class on the submenu
+            }
+        });
+    });
+});
+</script></div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer Content -->
+<footer>
+    <div class="footer footerfont clearfix">
+      <div class="container">
+        
+        <div class="disclaimer" pardot-region="Disclaimer" style="text-align:center; color: #0f0e0e; font-size:12px;margin-top:5px;margin-bottom:5px;" data-id="60437" data-hml-enabled="1">
+          <!-- You can add any content for the disclaimer here -->
+        </div>
+  
+        <div class="disclaimer" pardot-region="Sponsor Icons" style="text-align:center; color: #9b9b9b; font-size:12px;" data-id="60440" data-hml-enabled="1">
+          <p>&copy; 2025 Reach Your Potential. All rights reserved. 
+            <a href="file:///Users/bernadikola/Downloads/reachyrP/index.html" target="_self">Go Home</a> | 
+            <a href="https://" target="_self">Project</a>
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script><script>
+
+    /* --------------------------------------------------------------
+        FUNCTIONS
+    ----------------------------------------------------------------- */
+        /**
+         * Replace all occurences of https://simplesharebuttons.com in the
+         * social sharing list with the url of this page, and all occurrence
+         * of "Check this out" with the page title
+         */
+            $(".social-list a").each(function() {
+                // get values
+                var thisPage = window.location.href;
+                var url = $(this).attr('href');
+
+                // get title of this page
+                var title = $(document).find("title").text();
+              
+                // replace values
+                url = url.replace("http://www.pardot.com", thisPage);
+                url = url.replace("template-title", title);
+
+                //update value of the link anchor
+                $(this).attr('href', url);
+            });
+
+        /**
+         * Pardot label alignment fix
+         */
+            pardot.$(function() {
+                var $ = window.pardot.$;
+                // Add label-left class to the <form> if label alignment is set to Default or Left in form styling
+                var $labelAlignment = $('#pardot-form .field-label').css('float');
+                if ($labelAlignment == 'left') { $('#pardot-form').addClass('label-left'); }
+            });
+
+    </script></body></html>

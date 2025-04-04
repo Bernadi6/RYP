@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reach Your Potential - Charity Organization</title>
+    <link rel="stylesheet" href="/Users/bernadikola/Downloads/reachyrP/style.css">
+    <script>
+        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/bracusa.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6.2"}};
+        /*! This file is auto-generated */
+        !function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+        
+    
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    // Toggle mobile navigation when the hamburger menu is clicked
+    hamburger.addEventListener('click', function() {
+        mobileNav.classList.toggle('active');
+    });
+
+    // Handle dropdown behavior on mobile
+    const mobileMenuLinks = document.querySelectorAll('.menu-item > a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const submenu = this.nextElementSibling;
+            if (submenu && submenu.classList.contains('sub-menu')) {
+                e.preventDefault(); // Prevent default behavior of the link
+                submenu.classList.toggle('active'); // Toggle submenu visibility
+            }
+        });
+    });
+});
+
+
+
+</script>
+
+
+<style>
+  /* Footer Links */
+  footer a {
+      color: #e17f00;
+      text-decoration: none;
+  }
+
+  footer a:hover {
+      color: #2c3e50;
+      text-decoration: underline;
+  }
+
+  /* Logo Settings */
+  .header-main .logo img {
+      width: 150px;
+      height: auto;
+      max-width: 100%;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+      /* Hide desktop menu */
+      .header-menu-wrapper {
+          display: none;
+      }
+
+      /* Show mobile menu */
+      .mobile-nav {
+          display: block;
+          background-color: #333;
+          position: absolute;
+          top: 60px;
+          width: 100%;
+          padding: 20px;
+          z-index: 10;
+      }
+
+      /* Mobile Menu Styles */
+      .mobile-nav ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+      }
+
+      .mobile-nav li {
+          margin: 15px 0;
+      }
+
+      .mobile-nav a {
+          color: white;
+          text-decoration: none;
+          padding: 5px;
+          display: block;
+      }
+
+      .mobile-nav .menu-item > a {
+          color: #010101;
+          font-weight: bold;
+          padding: 5px;
+      }
+
+      .mobile-nav .menu-item > a:hover {
+          color: #e17f00;
+      }
+
+      .sub-menu {
+          display: none;
+          padding-left: 5px;
+      }
+
+      .sub-menu.active {
+          display: block;
+      }
+
+      .sub-menu li a {
+          color: #fff;
+      }
+
+      .sub-menu li a:hover {
+          color: #e17f00;
+      }
+
+      /* Show Hamburger Icon */
+      .hamburger {
+          display: block;
+          font-size: 30px;
+          color: #333;
+          cursor: pointer;
+          position: absolute;
+          right: 140px;
+      }
+
+      /* Hide desktop donate button and show mobile donate button */
+      .desktop-donate {
+          display: none;
+      }
+
+      .mobile-donate {
+          display: inline-block;
+      }
+  }
+
+  /* Desktop Styles */
+  @media (min-width: 769px) {
+      /* Show desktop menu */
+      .header-menu-wrapper {
+          display: flex;
+      }
+
+      /* Hide mobile menu */
+      .mobile-nav {
+          display: none;
+      }
+
+      .desktop-donate {
+          display: inline-block;
+      }
+
+      /* Hide mobile donate button */
+      .mobile-donate {
+          display: none;
+      }
+
+      .hamburger {
+          display: none;
+      }
+
+      .menu-item {
+        position: relative; /* Position for dropdown submenu */
+    }
+
+    /* Initially hide the submenus */
+    .sub-menu {
+        display: none; 
+        position: absolute;
+        top: 100%; /* Position it below the parent menu */
+        left: 0;
+        background-color: #333;
+        padding: 10px;
+        list-style: none;
+        width: 200px; /* Optional: control submenu width */
+    }
+    
+
+    /* Show the submenu when the parent is hovered */
+    .menu-item:hover .sub-menu {
+        display: block;
+    }
+
+    /* Style the sub-menu items */
+    .sub-menu li {
+        padding: 5px 10px;
+    }
+
+    /* Hover effect for submenu items */
+    .sub-menu li a {
+    color: #fff; /* Set the text color to white */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Add padding around the links */
+    display: block; /* Ensure links are block elements (making them clickable in the whole area) */
+    width: 100%; /* Make the links fill the width of the submenu */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+    .sub-menu li a:hover {
+        color: #e17f00;
+    }
+
+    /* Show desktop donate button */
+    .desktop-donate {
+        display: inline-block;
+    }
+
+    /* Hide mobile donate button */
+    .mobile-donate {
+        display: none;
+    }
+}
+
+
+
+</style>
+
+        <style id='wp-emoji-styles-inline-css'>
+        
+            img.wp-smiley, img.emoji {
+                display: inline !important;
+                border: none !important;
+                box-shadow: none !important;
+                height: 1em !important;
+                width: 1em !important;
+                margin: 0 0.07em !important;
+                vertical-align: -0.1em !important;
+                background: none !important;
+                padding: 0 !important;
+            }
+
+   footer a {
+color: #e17f00 ; /* Change this color to your desired link color */
+text-decoration: none; /* Removes underline */
+}
+
+footer a:hover {
+color: #2c3e50; /* Color when the user hovers over the link */
+text-decoration: underline; /* Adds underline when hovered */
+}
+      
+</style>
+        <link rel='stylesheet' id='wp-block-library-css' href='https://reachyourpotential.me/kool/css/style.min.css?ver=6.6.2' media='all' />
+        <style id='classic-theme-styles-inline-css'>
+        /*! This file is auto-generated */
+        .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+        </style>
+        <style id='global-styles-inline-css'>
+        :root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+        :where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+        :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+        :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+        </style>
+        <link rel='stylesheet' id='brac-usa-style-css' href='https://reachyourpotential.me/kool/cs/style.css?ver=1.0.0' media='all' />
+        <link rel='stylesheet' id='player_css-css' href='https://reachyourpotential.me/kool/cs/plyr.css?ver=6.6.2' media='all' />
+        <link rel='stylesheet' id='select2_css-css' href='https://reachyourpotential.me/kool/cs/select2.min.css?ver=6.6.2' media='all' />
+        <link rel='stylesheet' id='main_css-css' href='https://reachyourpotential.me/kool/cs/main.css?ver=06:43:36' media='all' />
+        <script src="https://reachyourpotential.me/kool/js/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+        <script src="https://reachyourpotential.me/kool/js/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+        
+        <!-- Google tag (gtag.js) snippet added by Site Kit -->
+
+        <!-- Google Ads snippet added by Site Kit -->
+        
+        <!-- Google Analytics snippet added by Site Kit -->
+        <script src="https://www.googletagmanager.com/gtag/js?id=GT-NFJHVVP2" id="google_gtagjs-js" async></script>
+        <script id="google_gtagjs-js-after">
+        window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+        gtag("set","linker",{"domains":["reachyourpotential.me"]});
+        gtag("js", new Date());
+        gtag("set", "developer_id.dZTNiMT", true);
+        gtag("config", "GT-NFJHVVP2");
+        gtag("config", "AW-663796388");
+         window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }
+        </script>
+        
+        <!-- End Google tag (gtag.js) snippet added by Site Kit -->
+        <link rel="https://api.w.org/" href="https://reachyourpotential.me/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://bracusa.org/wp-json/wp/v2/pages/32" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://bracusa.org/xmlrpc.php?rsd" />
+        <meta name="generator" content="WordPress 6.6.2" />
+        <link rel='shortlink' href='https://reachyourpotential.me/' />
+        <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="" />
+        <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://" />
+        <meta name="generator" content="Site Kit by Google 1.136.0" /><meta name="facebook-domain-verification" content="9qbsrwwswv7asi1bwgb0hzp6zc3ux2" />
+        <!-- Fundraise Up: the new standard for online giving -->
+        <script>(function(w,d,s,n,a){if(!w[n]){var l='call,catch,on,once,set,then,track'
+        .split(','),i,o=function(n){return'function'==typeof n?o.l.push([arguments])&&o
+        :function(){return o.l.push([n,arguments])&&o}},t=d.getElementsByTagName(s)[0],
+        j=d.createElement(s);j.async=!0;j.src='https://cdn.fundraiseup.com//'+a;
+        t.parentNode.insertBefore(j,t);o.s=Date.now();o.v=4;o.h=w.location.href;o.l=[];
+        for(i=0;i<7;i++)o[l[i]]=o(l[i]);w[n]=o}
+        })(window,document,'script','FundraiseUp','AGXVNSSK');</script>
+        <!-- End Fundraise Up -->
+        <style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+        <!-- Google Tag Manager snippet added by Site Kit -->
+        <script>
+                    ( function( w, d, s, l, i ) {
+                        w[l] = w[l] || [];
+                        w[l].push( {'gtm.start': new Date().getTime(), event: 'gtm.js'} );
+                        var f = d.getElementsByTagName( s )[0],
+                            j = d.createElement( s ), dl = l != 'dataLayer' ? '&l=' + l : '';
+                        j.async = true;
+                        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                        f.parentNode.insertBefore( j, f );
+                    } )( window, document, 'script', 'dataLayer', 'GTM-NMDHVPF' );
+                    
+        
+       
+</script>
+        <!-- End Google Tag Manager snippet added by Site Kit -->
+        <link rel="icon" href="https://reachyourpotential.me/kool/android-chrome-192x192.png" sizes="32x32" />
+        <link rel="icon" href="https://reachyourpotential.me/kool/android-chrome-512x512.png" sizes="192x192" />
+        <link rel="apple-touch-icon" href="https://reachyourpotential.me/apple-touch-icon.png" />
+        <meta name="msapplication-TileImage" content="https://reachyourpotential.me/kool/apple-touch-icon.png" />
+		<style id="wp-custom-css">
+			p.custom-indent { 
+text-indent:60px;
+} 
+.tabs-wrapper .nav-link h3{
+	    font-size: 1.125rem;
+	margin-bottom:0px;
+}
+@media screen and (min-width: 1024px){
+.tabs-wrapper .tab-content .img-wrapper {
+   margin-top: 0%;
+}
+	.tabs-wrapper-inner{
+		margin-bottom: 52%;
+	}
+}
+.title-wrapper{
+	margin-left: 0px;
+}		
+
+</style>
+        
+</head>
+<body>
+  
+  
+  <header class="header-wrapper container" id="header">
+    <div class="header">
+        <div class="header-inner">
+            <div class="header-top">
+                <a href="index.html" target="_blank"></a>
+            </div>
+            <div class="header-main" id="header-main">
+                <div class="logo">
+                    <a href="logo">
+                        <img src="https://reachyourpotential.me/kool/ryp.png" alt="Reach Your Potential Logo" />
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="header-menu-wrapper">
+                    <ul id="primary-menu" class="menu header-menu">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                            <button class="menu__link menu__link--button">What We Do</button>
+                            <ul class="sub-menu">
+                                <li><a href="page2.html">Conference and Events</a></li>
+                                <li><a href="file:///Users/bernadikola/Downloads/reachyrP/index.html">Home</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                            <button class="menu__link menu__link--button">Who We Are</button>
+                            <ul class="sub-menu">
+                                <li><a href="aboutus.html">About Us</a></li>
+                                <li><a href="board.html">Board</a></li>
+                                <li><a href="report.html">Annual Reports & Financial</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                            <button class="menu__link menu__link--button">How to Help</button>
+                            <ul class="sub-menu">
+                                <li><a href="https://www.paypal.com/donate/?hosted_button_id=QZ6RWCQAAYG8Y">Donate</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Donate Link for Desktop only -->
+                    <a class="btn btn-primary desktop-donate" href="https://www.paypal.com/donate/?hosted_button_id=QZ6RWCQAAYG8Y" target="_self">Donate</a>
+                </div>
+
+                <!-- Hamburger Icon for Mobile -->
+                <div class="hamburger" id="hamburger">&#9776;</div>
+
+                <!-- Mobile Navigation (Hidden by default) -->
+                <div class="mobile-nav" id="mobile-nav">
+                    <ul id="primary-menu" class="menu header-menu">
+                        <li class="menu-item">
+                            <a href="#">What We Do</a>
+                            <ul class="sub-menu">
+                                <li><a href="page2.html">Conference and Events</a></li>
+                                <li><a href="education.html">Education Programs</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Who We Are</a>
+                            <ul class="sub-menu">
+                                <li><a href="aboutus.html">About Us</a></li>
+                                <li><a href="board.html">Board</a></li>
+                                <li><a href="report.html">Annual Reports & Financial</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">How to Help</a>
+                            <ul class="sub-menu">
+                                <li><a href="https://www.paypal.com/donate/?hosted_button_id=QZ6RWCQAAYG8Y">Donate</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Donate Link for Mobile only -->
+                <a class="btn btn-primary mobile-donate" href="https://www.paypal.com/donate/?hosted_button_id=QZ6RWCQAAYG8Y" target="_self">Donate</a>
+            </div>
+        </div>
+    </div>
+</header>
+  
+
+  <main id="content" class="site-content main">
+    <!-- start main_flexible_content: hero_featured template -->
+     <div class="container">
+  <div class="hero-featured ">
+    <div class="image-wrapper">
+                <img src="/Users/bernadikola/Downloads/reachyrP/lead.jpg" alt="Play Lab in Africa" />
+    </div>
+    
+    <div class="text-wrapper">
+      <div class="text-wrapper-inner">
+                    <div class="hero-label">Education</div>
+                <div class="title-wrapper">
+                            
+                    <h1 class="h2">Reach Your Potential's education programs offer children with joyful, inclusive, and quality learning opportunities
+</h1>
+                        </div>
+        <div class="description-wrapper">
+         <div class="description-wrapper-inner">
+                        <p>The Reach Your Potential Education Program aims to empower students through educational activities that foster skills such as leadership, teamwork, and community engagement. 
+                          By providing these opportunities, students will be encouraged to reach their fullest potential, <span style="font-weight: 400;">improve their personal development,</span>,.</p>and contribute positively to society.
+                                            </div>
+                                    </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+                                     
+      </div>
+    </div>
+  </div>
+</div>
+<!-- start main_flexible_content: tabs template -->
+<div class="tabs-wrapper" id="tabs-43765">
+  <div class="container">
+          <div class="tabs-title-wrapper">
+        <h2 class="h5 section-header">Our approach</h2>
+      </div>
+        <div class="tabs-wrapper-inner">
+      <div class="nav flex-column nav-pills wide" role="tablist" aria-orientation="vertical">
+                 <!-- <h3 class="h2">See how our initiatives are making an impact.</h3>
+                                          <a class="nav-link active"
+             id="86683-tab"
+             data-toggle="pill"
+             href="#tab-86683"
+             role="tab"
+             aria-controls="tab-86683"
+             aria-selected="true">
+              Early childhood development          </a>
+                          <a class="nav-link"
+             id="86684-tab"
+             data-toggle="pill"
+             href="#tab-86684"
+             role="tab"
+             aria-controls="tab-86684"
+             aria-selected="false">
+              Primary Education Program          </a>
+                          <a class="nav-link"
+             id="86685-tab"
+             data-toggle="pill"
+             href="#tab-86685"
+             role="tab"
+             aria-controls="tab-86685"
+             aria-selected="false">
+              Tertiary and Vocational Education Programs          </a>
+                      </div>
+
+      <div class="tab-content narrow">
+                                  <div class="accordion-header">
+            <span class="h5 accordion-tab collapsed" data-toggle="collapse" data-target="#tab-86683" aria-expanded="true" aria-controls="tab-86683">
+                Early childhood development<svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.762695L9.70712 9.46981L18.4697 0.707235" stroke="black"/></svg>
+              </span>
+          </div>
+          <div class="tab-pane fade collapse  show active"
+               id="tab-86683"
+               role="tabpanel"
+               data-parent="#tabs-43765"
+               aria-labelledby="86683-tab">
+                <div class="content-wrapper">
+                                  <p>Reach Your Potential is dedicated to empowering individuals through education, community engagement, and sustainable growth. Inspired by models such as Play Labs, our initiative offers high-quality, low-cost educational opportunities to children and young people in underserved communities. We focus on delivering playful, child-centered learning experiences that foster critical skills, including self-regulation, empathy, and critical thinking.
+
+                                    Our local Youth Leaders, who are young individuals trained in interactive learning methods, facilitate activities that support both the physical and emotional development of children. These sessions are designed not only to educate but also to help children build resilience and heal from trauma or stress, enabling them to thrive despite adversity.</p>
+
+                                  </div>
+
+                                  <div class="img-wrapper">
+                    <h3 class="show-mobile">Early childhood development</h3>
+                                        <img src="/Users/bernadikola/Downloads/reachyrP/OIP.jpeg" alt="BRAC pre-primary education in Bangladesh" />
+                  </div>
+                          </div>
+                            <div class="accordion-header">
+            <span class="h5 accordion-tab collapsed" data-toggle="collapse" data-target="#tab-86684" aria-expanded="true" aria-controls="tab-86684">
+                Primary Education Program<svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.762695L9.70712 9.46981L18.4697 0.707235" stroke="black"/></svg>
+              </span>
+          </div>
+          <div class="tab-pane fade collapse "
+               id="tab-86684"
+               role="tabpanel"
+               data-parent="#tabs-43765"
+               aria-labelledby="86684-tab">
+                <div class="content-wrapper">
+                                  <p>Reach Your Potential is built on the principle of joyful, community-driven education that empowers young people to thrive. Our Community Educators, who are women from the local community, are trained in child-friendly, participatory teaching methods that focus on active learning rather than rote memorization. They lead engaging activities, including songs, dance, art, and games, which help children build essential soft skills, alongside core subjects like reading, math, and critical thinking.
+
+                                    This approach has proven to be incredibly effective. Children involved in Reach Your Potential consistently show remarkable progress in both academic achievement and personal development, outperforming their peers in more traditional educational settings. Despite often coming from underserved communities, our students develop strong foundational skills and resilience, positioning them for success in school and life.
+                                    
+                                    By integrating joyful learning with a community-driven approach, Reach Your Potential not only focuses on educational outcomes but also ensures that students develop key socio-emotional skills that help them navigate life’s challenges. Our model emphasizes the power of community involvement and active learning, leading to lasting impact and greater opportunities for young people to reach their full potential.
+                                    
+                                    </p>
+
+                                  </div>
+
+                                  <div class="img-wrapper">
+                    <h3 class="show-mobile">Primary Education Program</h3>
+                                        <img src="/Users/bernadikola/Downloads/reachyrP/Children-raise-their-books-in-a-primary-school-class-in-Malawi-for-marking.jpg" alt="Classroom on a boat" />
+                  </div>
+                          </div>
+                            <div class="accordion-header">
+            <span class="h5 accordion-tab collapsed" data-toggle="collapse" data-target="#tab-86685" aria-expanded="true" aria-controls="tab-86685">
+                Tertiary and Vocational Education Programs<svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 0.762695L9.70712 9.46981L18.4697 0.707235" stroke="black"/></svg>
+              </span>
+          </div>
+          <div class="tab-pane fade collapse "
+               id="tab-86685"
+               role="tabpanel"
+               data-parent="#tabs-43765"
+               aria-labelledby="86685-tab">
+                <div class="content-wrapper">
+                                  <p>Reach Your Potential provides educational programs that extend into adulthood, helping learners gain essential skills for today’s job market. It offers vocational training in high-demand fields, supporting young people to either join the workforce or start their own businesses, while also providing scholarships to disadvantaged students for secondary and higher education. Additionally, the program nurtures the next generation of leaders and innovators by offering mentorship and high-quality resources to help young people realize their full potential.</p>
+
+                                  </div>
+
+                                  <div class="img-wrapper">
+                    <h3 class="show-mobile">Tertiary and Vocational Education Programs</h3>
+                                        <img src="/Users/bernadikola/Downloads/reachyrP/lead.jpg" alt="Tertiary and vocational education" />
+                  </div>
+                          </div>
+                        </div>
+    </div>
+  </div>
+</div>-->
+<!-- start main_flexible_content: video_block template -->
+ 
+
+<!-- start main_flexible_content: quote_block template -->
+ 
+<!--<div class="container quote-block-wrapper">
+  <div class="quote-block">
+    <div class="text-wrapper">
+      <div class="col-left">
+        <blockquote>
+          Education is the most powerful weapon which you can use to change the world.”          
+          <footer>Sir Nelson Mandela</footer>
+        </blockquote>
+      </div>
+      <div class="col-right">
+                  <div class="description">
+            For more details on our education programs, download our fact sheet.          </div>
+                <div class="cta">
+            <a class="btn btn-primary" href="/Users/bernadikola/Downloads/reachyrP/EDUCATION.pdf" target="_blank">Download                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.434814 9L9.14193 17.7071M9.14193 17.7071L17.9045 8.94454M9.14193 17.7071L9.14195 1.38611" stroke="white"/></svg>
+                        </a>
+                                                          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+--start main_flexible_content: featured_post template -
+  
+                  </div>
+                </div>
+              </div>
+                              </div>-->
+        <div class="see-all">
+          <div class="read-more">
+                          
+                      </div>
+        </div>
+      </div>
+      </div>
+      <!--End releted-research-->
+
+<!-- start main_flexible_content: text_section_with_cta template -->
+ 
+<div class="full-width-text-cta text_section_with_cta text_section_with_cta--light">
+  <div class="container">
+    <div class="text-wrapper">
+      <h3>Our most critical programs for vulnerable families around the world depend on the generosity of people like you.</h3>
+                      <div class="cta">
+                                <a class="btn btn-primary" href="https://www.paypal.com/donate/?hosted_button_id=QZ6RWCQAAYG8Y" target="_self">
+                        Make a gift today                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.7625 20.7073L23.4696 12.0001M23.4696 12.0001L14.707 3.23757M23.4696 12.0001L1.14857 12.0001" stroke="white"/></svg>
+                    </a>
+                                      </div>
+          </div>
+  </div>
+</div>
+  </main>
+  
+  <!--End Content-->
+
+
+                  
+
+        <div class="footer-socials">
+                                                                   
+        </div>
+
+        <div class="footer-sponsors">
+                                                                            </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<!-- End page-->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+piAId = '919273';
+piCId = '2795';
+piHostname = 'pi.pardot.com';
+
+(function() {
+function async_load(){
+var s = document.createElement('script'); s.type = 'text/javascript';
+s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+}
+if(window.attachEvent) { window.attachEvent('onload', async_load); }
+else { window.addEventListener('load', async_load, false); }
+})();
+
+</script><link rel='stylesheet' id='magnific-popup-css' href='https://reachyourpotential.me/kool/css/magnific-popup.css' media='all' />
+    <link rel='stylesheet' id='mapplic-style-css' href='https://reachyourpotential.me/kool/css/mapplic.css?ver=6.1.1' media='all' />
+    <script src="https://reachyourpotential.me/kool/js/navigation.js?ver=1.0.0" id="brac-usa-navigation-js"></script>
+    <script src="https://reachyourpotential.me/kool/js/googlesitekit-consent-mode-3d6495dceaebc28bcca3.js" id="googlesitekit-consent-mode-js"></script>
+    <script src="https://cdn.plyr.io/3.6.2/plyr.js" id="player_js-js"></script>
+    <script src="https://reachyourpotential.me/kool/js/select2.full.min.js" id="select2_js-js"></script>
+    <script src="https://reachyourpotential.me/kool/js/js/utils.js" id="utils_js-js"></script>
+    <script src="https://reachyourpotential.me/kool/js/js/collapse.js" id="collapse_js-js"></script>
+    <script src="https://reachyourpotential.me/kool/js/navigation.js" id="navigation_js-js"></script>
+    <script src="https://reachyourpotential.me/kool/js/tabs.js" id="tabs_js-js"></script>
+    <script src="https://reachyourpotential.me/kool/js/custom.js?ver=06:43:36" id="custom_js-js"></script>
+    <script id="wp-consent-api-js-extra">
+    var consent_api = {"consent_type":"","waitfor_consent_hook":"","cookie_expiration":"30","cookie_prefix":"wp_consent"};
+    </script>
+    <script src="https://reachyourpotential.me/kool/js/wp-consent-api.min.js?ver=1.0.7" id="wp-consent-api-js"></script>
+    <script src="https://reachyourpotential.me/kool/js/jquery.mousewheel.js" id="mousewheel-js"></script>
+    <script src="https://reachyourpotential.me/kool/js/magnific-popup.js" id="magnific-popup-js"></script>
+    <script id="mapplic-script-js-extra">
+    var mapplic_localization = {"more":"More","search":"Search","notfound":"Nothing found. Please try a different search.","iconfile":"https:\/\/bracusa.org\/wp-content\/plugins\/mapplic\/core\/images\/icons.svg"};
+    </script>
+    <script src="https://reachyourpotential.me/kool/js/mapplic.js?ver=6.1.1" id="mapplic-script-js"></script>
+
+</body>
+</html>
+
+
+   
+   
