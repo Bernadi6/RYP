@@ -4,6 +4,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <link rel="shortcut icon" type="image/jpg" href="https://reachyourpotential.me/kool/android-chrome-512x512.png">
+
 <!-- Favicon (small icon on the left of the title in the page tab) -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -327,7 +328,7 @@ form.form input.text, form.form textarea.standard, form.form select, form.form i
             .bgcolour {
                 background-color: #ffffff;
                 color: #ffffff;
-            }
+            } 
             
             .logopadding {
                 padding-top: 10px;
@@ -603,24 +604,81 @@ piHostname = 'pi.pardot.com';
 	else { window.addEventListener('load', async_load, false); }
 })();
 </script>
-</head>
+<header class="header-wrapper container" id="header">
+    <div class="header">
+        <div class="header-inner">
+            <div class="header-top">
+            </div>
+            <div class="header-main" id="header-main">
+                <!-- Logo -->
+                <div class="logo">
+                    <a>
+                        <img src="https://reachyourpotential.me/kool/ryp.png" class="responsive" width="135" alt="Reach Your Potential Logo">
+                    </a>
+                </div>
+
+                <!-- Menu Links -->
+                <div class="menu-links">
+                    <a href="https://reachyourpotential.me/index.html" class="go-home">Go Home</a>
+                    <a class="btn btn-primary desktop-donate" href="https://www.paypal.com/donate/?hosted_button_id=QZ6RWCQAAYG8Y" target="_self">Donate</a>
+              </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<style>
+    /* Styling for the header-main to align elements */
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+/* Style for the logo */
+.header-main .logo img {
+    width: 135px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure logo is responsive on different screen sizes */
+}
+
+/* Styling for the menu links (Go Home and Donate) */
+.header-main .menu-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* Go Home Link Style */
+.header-main .menu-links .go-home {
+    color: #e17f00;
+    text-decoration: none;
+    font-weight: ;
+    font-size: 16px;
+}
+
+/* Donate Button Style */
+.header-main .menu-links .desktop-donate {
+    color: #fff;
+    background-color: #e17f00;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 10;
+    font-size: 16px;
+}
+
+.header-main .menu-links .desktop-donate:hover {
+    background-color: #d16800; /* Darken the background color on hover */
+}
+
+</style>
 
     </style>
 
 <!-- Body Start -->
  <body>
-<div class="logo logopadding" align ="left" style="border-bottom:1px solid #e17f00;">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-            <a href="https://reachyourpotential.me/RYP/html/page2.html">  
-                <img src="https://reachyourpotential.me/kool/ryp.png" class="responsive" width="135" alt="Reach Your Potential Logo" placehold="logo" pardot-region="Logo" pardot-region-type="image"></a>
-                
-      </div>
-    </div>
-  </div>
-</div>
-               
+         
 <!--Banner Header -->
                 
 <div class="page-banner-image" data-inline-style="style-5f22f05da65ad">
@@ -667,6 +725,28 @@ piHostname = 'pi.pardot.com';
 <style type="text/css">
 form.form p.required label, form.form span.required label { background: none; padding-left: 0px; }
 </style>
+
+<script>
+    // Get the "Go Home" link and "Donate" button
+    const goHomeLink = document.querySelector('a[href="https://reachyourpotential.me/index.html"]');
+    const donateButton = document.querySelector('.desktop-donate');
+
+    // Add event listener for the "Go Home" link
+    goHomeLink.addEventListener('click', function (event) {
+        console.log('Go Home link clicked!');
+        // You can add custom actions here, like tracking or analytics
+    });
+
+    // Add event listener for the "Donate" button
+    donateButton.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default anchor tag behavior
+        console.log('Donate button clicked!');
+        
+        // Optionally, redirect to the PayPal donation page or open it in a new tab
+        window.open(donateButton.href, '_blank'); // Opens the donate link in a new tab
+    });
+</script>
+
 
 
 <script type="text/javascript">
@@ -741,7 +821,7 @@ form.form p.required label, form.form span.required label { background: none; pa
   
         <div class="disclaimer" pardot-region="Sponsor Icons" style="text-align:center; color: #9b9b9b; font-size:12px;" data-id="60440" data-hml-enabled="1">
           <p>&copy; 2025 Reach Your Potential. All rights reserved. 
-            <a href="https://reachyourpotential.me/RYP/html/index.html" target="_self">Go Home</a> | 
+          | 
             <!--<a href="https://" target="_self">Project</a>-->
           </p>
         </div>
