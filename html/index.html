@@ -135,12 +135,32 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "url": "https://reachyourpotential.me",
-  "logo": "https://reachyourpotential.me/kool/ryp.png",
+  "logo": "https://reachyourpotential.me/logo copy.png",
   "name": "Reach Your Potential - Charity Organization",
   "description": "A charity organization that empowers individuals to achieve their full potential through success stories, education programs, and Community service."
 }
 </script>
 
+
+<script>
+    let currentImageIndex = 0;
+    const images = [
+        "https://reachyourpotential.me/kool/group-coaching-optimised.jpg",
+        "https://reachyourpotential.me/inpire.jpg", // Replace with actual image URLs
+        "https://reachyourpotential.me/edu.jpeg",
+        "https://reachyourpotential.me/full.jpg"
+    ];
+
+    function changeImage() {
+        currentImageIndex++;
+        if (currentImageIndex >= images.length) {
+            currentImageIndex = 0; // Loop back to the first image
+        }
+        document.getElementById("slideshow-image").src = images[currentImageIndex];
+    }
+
+    setInterval(changeImage, 5000); // Change image every 5 seconds
+</script>
         
         <!-- Fundraise Up: the new standard for online giving -->
         <script>(function(w,d,s,n,a){if(!w[n]){var l='call,catch,on,once,set,then,track'
@@ -437,7 +457,7 @@
                 </div>
             </div>
             <div class="image-wrapper">
-                <img src="https://reachyourpotential.me/kool/group-coaching-optimised.jpg" alt="hero image" />
+                <img src="https://reachyourpotential.me/kool/group-coaching-optimised.jpg" alt="hero image" id="slideshow-image" />
             </div>
         </div>
     </main>
